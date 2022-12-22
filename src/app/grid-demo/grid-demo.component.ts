@@ -8,10 +8,11 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  { name: 'Hydrogen', gender: 'male', skills: 'H' },
-  { name: 'Helium', gender: 'male', skills: 'He' },
-  { name: 'Lithium', gender: 'male', skills: 'Li' },
-  { name: 'Beryllium', gender: 'male', skills: 'Be' },
+  { name: 'Chiranjeevi', gender: 'male', skills: 'H' },
+  { name: 'Venkatesh', gender: 'male', skills: 'He' },
+  { name: 'Nagarjuna', gender: 'male', skills: 'Li' },
+  { name: 'Bala Krishna', gender: 'male', skills: 'Be' },
+  { name: 'Sri Devi', gender: 'female', skills: 'Be' },
 ];
 
 @Component({

@@ -1,11 +1,11 @@
-<mat-form-field appearance="fill">
+<!-- <mat-form-field appearance="fill">
   <mat-label>Skills</mat-label>
   <mat-select [formControl]="skills" multiple>
     <mat-option *ngFor="let skills of skillsList" [value]="skills">{{
       skills
     }}</mat-option>
   </mat-select>
-</mat-form-field>
+</mat-form-field> -->
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   <!--- Note that these columns can be defined in any order.
       The actual rendered columns are set as a property on the row definition" -->
@@ -25,7 +25,16 @@
   <!-- Symbol Column -->
   <ng-container matColumnDef="skills">
     <th mat-header-cell *matHeaderCellDef>Skills</th>
-    <td mat-cell *matCellDef="let element">{{ element.skills }}</td>
+    <td mat-cell *matCellDef="let element">
+      <mat-form-field appearance="fill">
+        <mat-label>Skills</mat-label>
+        <mat-select [formControl]="skills" multiple>
+          <mat-option *ngFor="let skills of skillsList" [value]="skills">{{
+            skills
+          }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
