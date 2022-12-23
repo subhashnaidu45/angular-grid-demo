@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { MatTableModule } from '@angular/material/table';
 import { GridDemoComponent } from './grid-demo/grid-demo.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatNativeDateModule } from '@angular/material/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 @NgModule({
   imports: [
@@ -13,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     MatSelectModule,
     ReactiveFormsModule,
+    MatNativeDateModule,
     BrowserAnimationsModule,
     MatTableModule,
   ],
@@ -20,3 +23,4 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+// platformBrowserDynamic().bootstrapModule(AppModule);
