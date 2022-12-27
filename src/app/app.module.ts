@@ -7,7 +7,7 @@ import { MatTableModule } from '@angular/material/table';
 import { GridDemoComponent } from './grid-demo/grid-demo.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatNativeDateModule } from '@angular/material/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   imports: [
@@ -18,6 +18,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
     MatNativeDateModule,
     BrowserAnimationsModule,
     MatTableModule,
+    MatMenuModule,
   ],
   declarations: [AppComponent, GridDemoComponent],
   bootstrap: [AppComponent],
